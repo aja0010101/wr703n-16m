@@ -13,10 +13,12 @@ diff --git a/target/linux/ramips/image/mt76x8.mk b/target/linux/ramips/image/mt7
 index abcdef0..1234567 100644
 --- a/target/linux/ramips/image/mt76x8.mk
 +++ b/target/linux/ramips/image/mt76x8.mk
-@@ -241,5 +241,5 @@
-  define Device/glinet_gl-mt300n-v2
+@@ -241,6 +241,6 @@
+ define Device/glinet_gl-mt300n-v2
 -  IMAGE_SIZE := 16064k
 +  IMAGE_SIZE := 65216k
    DEVICE_VENDOR := GL.iNet
    DEVICE_MODEL := GL-MT300N
    DEVICE_VARIANT := V2
+   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
+   SUPPORTED_DEVICES += gl-mt300n-v2
