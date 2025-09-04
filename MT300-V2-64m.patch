@@ -1,0 +1,20 @@
+--- a/target/linux/ramips/dts/mt7628an_glinet_gl-mt300n-v2.dts
++++ b/target/linux/ramips/dts/mt7628an_glinet_gl-mt300n-v2.dts
+@@ -143,5 +143,5 @@
+
+ 			partition@50000 {
+ 				compatible = "denx,uimage";
+ 				label = "firmware";
+-				reg = <0x50000 0xfb0000>;
++				reg = <0x50000 0x3fb0000>;
+
+--- a/target/linux/ramips/image/mt76x8.mk
++++ b/target/linux/ramips/image/mt76x8.mk
+@@ -267,6 +267,6 @@
+
+define Device/glinet_gl-mt300n-v2
+- IMAGE_SIZE := 16064k
++ IMAGE_SIZE := 65216k
+  DEVICE_VENDOR := GL.iNet
+  DEVICE_MODEL := GL-MT300N
+  DEVICE_VARIANT := V2
