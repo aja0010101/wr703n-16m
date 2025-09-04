@@ -5,8 +5,8 @@
 			partition@50000 {
 				compatible = "denx,uimage";
 				label = "firmware";
--			reg = <0x50000 0xfb0000>;
-+			reg = <0x50000 0x3fb0000>;
+-				reg = <0x50000 0xfb0000>;
++				reg = <0x50000 0x3fb0000>;
 --- a/target/linux/ramips/image/mt76x8.mk
 +++ b/target/linux/ramips/image/mt76x8.mk
 @@ -240,8 +240,8 @@
