@@ -20,5 +20,5 @@ sed -i 's/192.168.1.1/192.168.9.1/g' package/base-files/files/bin/config_generat
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 # sed -i 's/CONFIG_TARGET_MULTI_PROFILE=y/CONFIG_TARGET_ath79_tiny_DEVICE_tplink_tl-wr703n=y/' .config
-sed -i 's/CONFIG_TARGET_MULTI_PROFILE=y/CONFIG_TARGET_ramips_mt76x8_DEVICE_glinet_gl-mt300n-v2=y/' .config
-sed -i '/CONFIG_TARGET_DEVICE/d' .config
+# sed -i 's/CONFIG_TARGET_MULTI_PROFILE=y/CONFIG_TARGET_ramips_mt76x8_DEVICE_glinet_gl-mt300n-v2=y/' .config
+# sed -i '/CONFIG_TARGET_DEVICE/d' .config
