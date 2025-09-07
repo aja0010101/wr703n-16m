@@ -87,9 +87,9 @@ jobs:
         RUST_MAKEFILE="feeds/packages/lang/rust/Makefile"
         if [ -f "$RUST_MAKEFILE" ] && grep -q "llvm.download-ci-llvm=true" "$RUST_MAKEFILE"; then
           sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' "$RUST_MAKEFILE" || true
-          echo "[PATCH] 已将 llvm.download-ci-llvm 修改为 \"false\" 了"
+          echo "Patch llvm.download-ci-llvm succeed"
         else
-          echo "[SKIP] 未找到需要替换的项，跳过补丁"
+          echo "No items to replace found, skipping patch"
         fi
 
     - name: Download package
