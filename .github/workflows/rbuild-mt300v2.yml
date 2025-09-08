@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/openwrt/openwrt.git
   REPO_BRANCH: v24.10.2
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: yy.config
+  CONFIG_FILE: yy1.config
   CONFIG_URL: https://downloads.openwrt.org/releases/24.10.2/targets/ramips/mt76x8/config.buildinfo
   PATCH_FILE: MT300-V2-64m.patch
   DIY_P1_SH: diy-part1.sh
